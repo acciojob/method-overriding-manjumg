@@ -1,20 +1,32 @@
-// Task 5 (Final combined program)
+// Parent class A
 class A {
-    String meth() {
+
+    // Task 1: Method in class A
+    public String meth() {
         return "Invoking method from class A";
     }
 }
 
+// Child class B extending class A
 class B extends A {
+
+    // Task 4: Overriding method in class B
     @Override
-    String meth() {
+    public String meth() {
         return "Method is overridden in Extended class B";
     }
 }
 
+// Main class to run the program
 public class Main {
+
     public static void main(String[] args) {
-        B obj = new B();  // create object of class B
-        System.out.println(obj.meth());  // call overridden method
+
+        // Task 3 & Task 5:
+        // Creating object of class B
+        B obj = new B();
+
+        // Calling method meth()
+        System.out.println(obj.meth());
     }
 }
